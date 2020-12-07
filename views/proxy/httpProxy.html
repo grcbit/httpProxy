@@ -1,0 +1,11 @@
+{{extend 'layout.html'}}
+
+<strong>HTTP PROXY</strong>
+{{if request.vars.msg:}}
+  <div class="alert alert-{{=request.vars.alert}}">
+    <strong>{{=request.vars.msg}}</strong>
+  </div>
+{{pass}}
+<font size="2">
+  {{=form}}
+</font>
